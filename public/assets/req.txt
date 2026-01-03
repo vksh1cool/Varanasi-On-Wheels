@@ -1,0 +1,12 @@
+Requirement.
+
+i need to migrate a hostinger web builder website as i have used hostinger-web builder now i wanna switch to proper react frame work and with proepr front end as it it what it is just a portfolio to showcase their brand Varanasi On Wheels.
+
+i need you to scrape the whole website and create a better version on "https://varanasionwheels.com/"
+ ther data for the same is there in the folder itselfso use everything and comeup witha aextraordinary frontend website containing the exact number of things mentioned in the current website, i need the colour schema to be identical to the existing one just add fancy elements add moving elements in the background (for this take reference from "https://www.aura.build/browse/components" ) and for elements use (https://reactbits.dev/get-started/index) you'll find proper variety of fancy backgrounds elements components and everything. i need the cursor to be fancy (https://reactbits.dev/animations/click-spark) so think on it sit on it and get me something extra ordinary.
+
+ my competitors "https://www.varanasicab.com/"
+"https://kashiyatra.in/"
+"https://worldviewtravelvns.com/"
+
+take reference from them as well and make sure my content is seo optimised, make sure this is LLM optimised as anyone should search for best cabs in varanasi and VaranasiOnWheels.com should pop in top.
