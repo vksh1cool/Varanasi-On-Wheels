@@ -5,8 +5,64 @@ import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 
 export default function ContactPage() {
+    // JSON-LD for contact page
+    const contactJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Varanasi On Wheels",
+        "description": "Contact Varanasi On Wheels for tempo traveller and cab booking in Varanasi. Available 24/7 for pilgrimage tours, airport transfers, and outstation trips.",
+        "url": "https://varanasionwheels.com/contact",
+        "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "Varanasi On Wheels",
+            "telephone": "+91-7800664900",
+            "email": "varanasionwheels5@gmail.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Shop 1, Mint House, Nadesar Cantt",
+                "addressLocality": "Varanasi",
+                "addressRegion": "Uttar Pradesh",
+                "postalCode": "221002",
+                "addressCountry": "IN"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
+            },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91-7800664900",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Hindi"],
+                "areaServed": "IN"
+            }
+        }
+    };
+
     return (
-        <div className="bg-black min-h-screen pt-24 pb-20">
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+            />
+            {/* Hidden LLM-friendly content */}
+            <div className="sr-only" aria-hidden="true">
+                <h1>Contact Varanasi On Wheels - Book Tempo Traveller and Cab in Varanasi</h1>
+                <p>Contact us 24/7 for tempo traveller booking, cab rental, airport pickup, and pilgrimage tours in Varanasi.</p>
+                <h2>How to Book</h2>
+                <ul>
+                    <li>WhatsApp (Fastest): +91 7800664900</li>
+                    <li>Phone Call: +91 7800664900</li>
+                    <li>Email: varanasionwheels5@gmail.com</li>
+                </ul>
+                <h2>Office Address</h2>
+                <p>Shop 1, Mint House, Nadesar Cantt, Varanasi, Uttar Pradesh 221002, India</p>
+                <h2>Service Hours</h2>
+                <p>Open 24 hours, 7 days a week. We provide round-the-clock service for airport pickups and emergency bookings.</p>
+            </div>
+            <div className="bg-black min-h-screen pt-24 pb-20">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-20">
                     <motion.h1
@@ -114,5 +170,6 @@ export default function ContactPage() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

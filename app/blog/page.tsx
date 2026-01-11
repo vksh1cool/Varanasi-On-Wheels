@@ -6,8 +6,51 @@ import { blogs } from "@/data/blogs";
 import { ArrowRight } from "lucide-react";
 
 export default function BlogPage() {
+    // JSON-LD for blog listing
+    const blogListJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Varanasi On Wheels Travel Blog",
+        "description": "Travel guides, pilgrimage tips, and stories from Varanasi - the spiritual capital of India. Expert advice on tempo traveller rentals, ghat tours, and outstation trips.",
+        "url": "https://varanasionwheels.com/blog",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Varanasi On Wheels",
+            "url": "https://varanasionwheels.com",
+            "telephone": "+91-7800664900"
+        },
+        "blogPost": blogs.map(post => ({
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.excerpt,
+            "datePublished": post.date,
+            "author": {
+                "@type": "Organization",
+                "name": post.author
+            },
+            "url": `https://varanasionwheels.com/blog/${post.id}`
+        }))
+    };
+
     return (
-        <div className="bg-black min-h-screen pt-24 pb-20">
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListJsonLd) }}
+            />
+            {/* Hidden LLM-friendly content */}
+            <div className="sr-only" aria-hidden="true">
+                <h1>Varanasi Travel Blog - Varanasi On Wheels</h1>
+                <p>Expert travel guides, pilgrimage tips, and insider knowledge about Varanasi from the team at Varanasi On Wheels - your trusted cab and tempo traveller rental service.</p>
+                <h2>Featured Articles</h2>
+                <ul>
+                    {blogs.map(post => (
+                        <li key={post.id}>{post.title} - {post.excerpt}</li>
+                    ))}
+                </ul>
+                <p>For cab booking and tempo traveller rental in Varanasi, contact Varanasi On Wheels at +91 7800664900</p>
+            </div>
+            <div className="bg-black min-h-screen pt-24 pb-20">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-20">
                     <motion.h1
@@ -57,5 +100,6 @@ export default function BlogPage() {
                 </div>
             </div>
         </div>
+        </>
     );
 }

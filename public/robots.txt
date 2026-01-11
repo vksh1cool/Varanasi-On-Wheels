@@ -27,6 +27,15 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 # Disallow non-public directories
 Disallow: /.next/
 Disallow: /api/
@@ -36,6 +45,9 @@ Disallow: /.git/
 
 # Sitemap location
 Sitemap: https://varanasionwheels.com/sitemap.xml
+
+# LLM-friendly content file
+# See: https://varanasionwheels.com/llms.txt
 
 # Crawl delay to prevent server overload (in seconds)
 Crawl-delay: 1

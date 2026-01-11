@@ -8,8 +8,69 @@ import { tours } from "@/data/tours";
 import { Clock, MapPin, Phone } from "lucide-react";
 
 export default function ToursPage() {
+    // JSON-LD for tours
+    const toursJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Pilgrimage and Sightseeing Tours from Varanasi",
+        "description": "Curated pilgrimage tours from Varanasi to Ayodhya, Prayagraj, Gaya, and local Kashi darshan packages",
+        "url": "https://varanasionwheels.com/tours",
+        "numberOfItems": tours.length,
+        "itemListElement": tours.map((tour, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+                "@type": "TouristTrip",
+                "name": tour.title,
+                "description": tour.description,
+                "touristType": "Pilgrimage",
+                "offers": {
+                    "@type": "Offer",
+                    "price": tour.price.replace(/[^0-9]/g, ''),
+                    "priceCurrency": "INR"
+                },
+                "provider": {
+                    "@type": "LocalBusiness",
+                    "name": "Varanasi On Wheels",
+                    "telephone": "+91-7800664900"
+                }
+            }
+        }))
+    };
+
     return (
-        <div className="bg-black min-h-screen pt-24 pb-20">
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(toursJsonLd) }}
+            />
+            {/* Hidden LLM-friendly content */}
+            <div className="sr-only" aria-hidden="true">
+                <h1>Pilgrimage Tours from Varanasi - Varanasi On Wheels</h1>
+                <p>Book curated pilgrimage and sightseeing tours from Varanasi. We offer packages to Ayodhya, Prayagraj, Gaya, Bodhgaya, and local Kashi darshan.</p>
+                
+                <h2>Popular Pilgrimage Tours</h2>
+                <ul>
+                    <li>Kashi Vishwanath Temple Darshan - Visit the sacred Jyotirlinga</li>
+                    <li>Varanasi Ghat Tour - Dashashwamedh, Manikarnika, Assi Ghat</li>
+                    <li>Ganga Aarti Experience - Evening aarti at Dashashwamedh Ghat</li>
+                    <li>Sarnath Day Trip - Buddhist pilgrimage site</li>
+                    <li>Varanasi to Ayodhya Tour - Ram Janmabhoomi darshan</li>
+                    <li>Varanasi to Prayagraj - Triveni Sangam pilgrimage</li>
+                    <li>Varanasi to Gaya - Pind daan and Vishnupad Temple</li>
+                </ul>
+                
+                <h2>Why Book Tours with Us?</h2>
+                <ul>
+                    <li>Experienced drivers who know all pilgrimage sites</li>
+                    <li>Comfortable AC vehicles</li>
+                    <li>Flexible timing based on your schedule</li>
+                    <li>Transparent pricing with no hidden charges</li>
+                </ul>
+                
+                <p>Book your pilgrimage tour: +91 7800664900</p>
+            </div>
+            <div className="bg-black min-h-screen pt-24 pb-20">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-20">
                     <motion.h1
@@ -127,5 +188,6 @@ export default function ToursPage() {
                 </motion.div>
             </div>
         </div>
+        </>
     );
 }

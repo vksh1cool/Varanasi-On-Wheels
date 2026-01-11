@@ -1,67 +1,5 @@
 export const vehicles = [
     {
-        id: "innova-crysta",
-        name: "Innova Crysta",
-        slug: "innova-crysta-rent-in-varanasi",
-        image: "/assets/Innova.webp",
-        detailImage: "/assets/innova-details.webp",
-        collageImage: "/assets/Innova collg.jpg",
-        type: "Premium SUV",
-        seats: "6+1",
-        fuel: "Diesel",
-        luggage: "3 Bags",
-        price: "₹18/km",
-        features: ["Captain Seats", "Ambient Lighting", "Climate Control", "Bluetooth Music", "GPS Navigation", "First Aid Kit"],
-        description: "The perfect choice for family trips and business travel. Experience superior comfort with captain seats and ample legroom.",
-        detailDescription: "Explore the holy city of Varanasi and its mesmerizing surroundings in the comfortable, luxury and stylish Innova Crysta. Perfect for families and medium groups of up to 6/7 passengers, the Innova Crysta offers a spacious interior, smooth ride, and excellent fuel efficiency.",
-        whyChoose: [
-            "Comfortable seating for 6/7 passengers plus the driver",
-            "Air-conditioned cabin for a cool and relaxed trip",
-            "Spacious boot for luggage",
-            "Ideal for city tours, airport transfers, and outstation day trips",
-            "Professional, experienced chauffeurs who know Varanasi well",
-            "Affordable and transparent pricing tailored for your travel needs"
-        ],
-        pricing: {
-            airportPickup: "₹1,350",
-            localTour8h: "₹2,400 (8hr/80km)",
-            fullDayTour: "₹3,500 (12hr/200km)",
-            outstationPerKm: "₹18/km (250km/day minimum)",
-            driverAllowance: "₹300/day"
-        }
-    },
-    {
-        id: "urbania",
-        name: "Urbania",
-        slug: "urbania",
-        image: "/assets/urbania.webp",
-        detailImage: "/assets/urbania-details.webp",
-        collageImage: "/assets/URBANIA CLLG.jpg",
-        type: "Luxury Van",
-        seats: "17",
-        fuel: "Diesel",
-        luggage: "10 Bags",
-        price: "₹35/km",
-        features: ["Reclining Seats", "Individual AC Vents", "USB Charging", "LED TV", "Reading Lights", "Spacious Aisle"],
-        description: "Travel in style with the Force Urbania. Ideal for medium-sized groups looking for luxury and comfort on long journeys.",
-        detailDescription: "The Force Urbania is the epitome of luxury van travel in India. With reclining seats, individual AC vents, and modern amenities, it's perfect for medium-sized group tours.",
-        whyChoose: [
-            "Comfortable seating for 17 passengers",
-            "Individual AC vents for personalized comfort",
-            "LED TV and entertainment system",
-            "USB charging ports for all passengers",
-            "Professional chauffeurs",
-            "Ideal for group pilgrimages and corporate tours"
-        ],
-        pricing: {
-            airportPickup: "₹3,500",
-            localTour8h: "₹6,200 (8hr/80km)",
-            fullDayTour: "₹7,500 (12hr/200km)",
-            outstationPerKm: "₹35/km (250km/day minimum)",
-            driverAllowance: "₹400/day"
-        }
-    },
-    {
         id: "tempo-traveller-12",
         name: "Tempo Traveller (12 Seater)",
         slug: "tempo-traveller-12-seater-rent-in-varanasi",
@@ -214,6 +152,68 @@ export const vehicles = [
             fullDayTour: "₹7,200 (12hr/200km)",
             outstationPerKm: "₹34/km (250km/day minimum)",
             driverAllowance: "₹500/day"
+        }
+    },
+    {
+        id: "innova-crysta",
+        name: "Innova Crysta",
+        slug: "innova-crysta-rent-in-varanasi",
+        image: "/assets/Innova.webp",
+        detailImage: "/assets/innova-details.webp",
+        collageImage: "/assets/Innova collg.jpg",
+        type: "Premium SUV",
+        seats: "6+1",
+        fuel: "Diesel",
+        luggage: "3 Bags",
+        price: "₹18/km",
+        features: ["Captain Seats", "Ambient Lighting", "Climate Control", "Bluetooth Music", "GPS Navigation", "First Aid Kit"],
+        description: "The perfect choice for family trips and business travel. Experience superior comfort with captain seats and ample legroom.",
+        detailDescription: "Explore the holy city of Varanasi and its mesmerizing surroundings in the comfortable, luxury and stylish Innova Crysta. Perfect for families and medium groups of up to 6/7 passengers, the Innova Crysta offers a spacious interior, smooth ride, and excellent fuel efficiency.",
+        whyChoose: [
+            "Comfortable seating for 6/7 passengers plus the driver",
+            "Air-conditioned cabin for a cool and relaxed trip",
+            "Spacious boot for luggage",
+            "Ideal for city tours, airport transfers, and outstation day trips",
+            "Professional, experienced chauffeurs who know Varanasi well",
+            "Affordable and transparent pricing tailored for your travel needs"
+        ],
+        pricing: {
+            airportPickup: "₹1,350",
+            localTour8h: "₹2,400 (8hr/80km)",
+            fullDayTour: "₹3,500 (12hr/200km)",
+            outstationPerKm: "₹18/km (250km/day minimum)",
+            driverAllowance: "₹300/day"
+        }
+    },
+    {
+        id: "urbania",
+        name: "Urbania",
+        slug: "urbania",
+        image: "/assets/urbania.webp",
+        detailImage: "/assets/urbania-details.webp",
+        collageImage: "/assets/URBANIA CLLG.jpg",
+        type: "Luxury Van",
+        seats: "17",
+        fuel: "Diesel",
+        luggage: "10 Bags",
+        price: "₹35/km",
+        features: ["Reclining Seats", "Individual AC Vents", "USB Charging", "LED TV", "Reading Lights", "Spacious Aisle"],
+        description: "Travel in style with the Force Urbania. Ideal for medium-sized groups looking for luxury and comfort on long journeys.",
+        detailDescription: "The Force Urbania is the epitome of luxury van travel in India. With reclining seats, individual AC vents, and modern amenities, it's perfect for medium-sized group tours.",
+        whyChoose: [
+            "Comfortable seating for 17 passengers",
+            "Individual AC vents for personalized comfort",
+            "LED TV and entertainment system",
+            "USB charging ports for all passengers",
+            "Professional chauffeurs",
+            "Ideal for group pilgrimages and corporate tours"
+        ],
+        pricing: {
+            airportPickup: "₹3,500",
+            localTour8h: "₹6,200 (8hr/80km)",
+            fullDayTour: "₹7,500 (12hr/200km)",
+            outstationPerKm: "₹35/km (250km/day minimum)",
+            driverAllowance: "₹400/day"
         }
     },
     {

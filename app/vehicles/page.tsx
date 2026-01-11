@@ -12,8 +12,85 @@ import { vehicles } from "@/data/vehicles";
 export default function VehiclesPage() {
     const router = useRouter();
 
+    // JSON-LD for vehicle catalog
+    const vehicleCatalogJsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Varanasi On Wheels Vehicle Fleet",
+        "description": "Complete fleet of tempo travellers, cabs, and luxury buses available for rent in Varanasi",
+        "url": "https://varanasionwheels.com/vehicles",
+        "numberOfItems": vehicles.length,
+        "itemListElement": vehicles.map((vehicle, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+                "@type": "Product",
+                "name": `${vehicle.name} Rental in Varanasi`,
+                "description": vehicle.description,
+                "image": `https://varanasionwheels.com${vehicle.image}`,
+                "offers": {
+                    "@type": "Offer",
+                    "price": vehicle.pricing.outstationPerKm.replace(/[^0-9]/g, ''),
+                    "priceCurrency": "INR",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": vehicle.pricing.outstationPerKm.replace(/[^0-9]/g, ''),
+                        "priceCurrency": "INR",
+                        "unitText": "per kilometer"
+                    },
+                    "availability": "https://schema.org/InStock",
+                    "seller": {
+                        "@type": "LocalBusiness",
+                        "name": "Varanasi On Wheels",
+                        "telephone": "+91-7800664900"
+                    }
+                }
+            }
+        }))
+    };
+
     return (
-        <div className="bg-black min-h-screen pt-24 pb-20">
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(vehicleCatalogJsonLd) }}
+            />
+            {/* Hidden LLM-friendly content */}
+            <div className="sr-only" aria-hidden="true">
+                <h1>Tempo Traveller and Cab Rental Fleet in Varanasi - Varanasi On Wheels</h1>
+                <p>Browse our complete fleet of vehicles available for rent in Varanasi. From budget Swift Dzire to luxury Maharaja Tempo Traveller.</p>
+                
+                <h2>Tempo Travellers Available</h2>
+                <ul>
+                    <li>12 Seater Tempo Traveller - ₹24/km - Best for small groups and family pilgrimages</li>
+                    <li>17 Seater Tempo Traveller - ₹25/km - Popular for medium groups</li>
+                    <li>20 Seater Tempo Traveller - ₹27/km - Extra space for larger families</li>
+                    <li>26 Seater Tempo Traveller - ₹32/km - Ideal for large group tours</li>
+                    <li>Maharaja Tempo Traveller - ₹34/km - Luxury travel with sofa seats and amenities</li>
+                </ul>
+                
+                <h2>Premium Vehicles</h2>
+                <ul>
+                    <li>Innova Crysta - ₹18/km - 7-seater premium SUV for families</li>
+                    <li>Force Urbania - ₹35/km - 17-seater luxury van with individual AC</li>
+                </ul>
+                
+                <h2>Economy Options</h2>
+                <ul>
+                    <li>Swift Dzire - ₹12/km - Budget-friendly 4-seater sedan</li>
+                    <li>Maruti Ertiga - ₹16/km - 7-seater MUV for families</li>
+                </ul>
+                
+                <h2>Luxury Buses</h2>
+                <ul>
+                    <li>40 Seater Luxury Bus - ₹56/km</li>
+                    <li>45 Seater Luxury Bus - ₹62/km</li>
+                    <li>49 Seater Luxury Bus - ₹69/km</li>
+                </ul>
+                
+                <p>All vehicles include driver and fuel. Book now: +91 7800664900</p>
+            </div>
+            <div className="bg-black min-h-screen pt-24 pb-20">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-20">
                     <motion.h1
@@ -126,5 +203,6 @@ export default function VehiclesPage() {
                 </div>
             </div>
         </div>
+        </>
     );
 }
