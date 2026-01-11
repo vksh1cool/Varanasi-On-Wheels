@@ -72,15 +72,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         {/* End Google Tag Manager */}
         
-        {/* 
-          Google Analytics is managed through Google Tag Manager (GTM-PJTD3G4K)
-          To configure GA in GTM:
-          1. Go to tagmanager.google.com
-          2. Add a new tag: Google Analytics: GA4 Configuration
-          3. Enter Measurement ID: G-GQGSX6LPC3
-          4. Trigger: All Pages
-          5. Publish the container
-        */}
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQGSX6LPC3"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-GQGSX6LPC3');
+            `,
+          }}
+        />
+        {/* End Google Analytics */}
       </head>
       <body
         className={`${outfit.variable} ${inter.variable} antialiased bg-background text-foreground`}
