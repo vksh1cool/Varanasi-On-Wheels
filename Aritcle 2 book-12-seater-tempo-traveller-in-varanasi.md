@@ -61,7 +61,7 @@ Scheduled rest breaks are essential for both the driver's alertness and on journ
 
 Keep the group energized by packing a variety of **snacks and hydration** options. Nowadays many vehicles offer many systems, like onboard entertainment. , playing music or movies can help passengers relax and be joyful while travelling.   
 
-[https://www.pexels.com/photo/road  trip  with  friends  3989923/](https://www.pexels.com/photo/road-trip-with-friends-3989923/)(A group of friends laughing and enjoying a road trip together)
+![A group of friends laughing and enjoying a road trip together](https://images.pexels.com/photos/3989923/pexels-photo-3989923.jpeg)
 
 ## **How to Calculate 12 Seater Tempo Traveller Fare for Your Trip**
 
@@ -86,7 +86,7 @@ Choose vehicles with **push  back seats** and plenty of legroom so passengers ca
 
 Good ventilation is crucial for preventing motion sickness in large groups. A well-maintained **HVAC system** filters out dust and pollutants, keeping the **cabin air fresh** even when driving through congested urban areas.
 
-[https://images.pexels.com/photos/1105666/pexels  photo  1105666.jpeg](https://www.google.com/search?q=https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg) (Close up of comfortable leather seats in a luxury van)
+![Close up of comfortable leather seats in a luxury van](https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg)
 
 ### **Extra Conveniences for Group Trips**
 
@@ -118,7 +118,7 @@ Encourage everyone to use **soft  sided luggage,** as it fits more easily into t
 
 To avoid overpacking, create a **shared packing list** for the group. For example, instead of everyone bringing a heavy first  aid kit, one person can carry a **comprehensive medical box** for the entire group's use.
 
-[https://www.pexels.com/photo/clothes  and  sunglasses  in  an  open  suitcase  on  a  rug  8933565/](https://www.pexels.com/photo/clothes-and-sunglasses-in-an-open-suitcase-on-a-rug-8933565/)(An open suitcase with travel essentials neatly packed)
+![An open suitcase with travel essentials neatly packed](https://images.pexels.com/photos/8933565/pexels-photo-8933565.jpeg)
 
 ### **Planning for Road Safety and Stops**
 
