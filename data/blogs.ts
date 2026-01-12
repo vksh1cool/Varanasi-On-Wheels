@@ -51,7 +51,7 @@ export const blogs = [
             
             <p>Keep the group energized by packing a variety of <strong>snacks and hydration</strong> options. Nowadays many vehicles offer onboard entertainment systems—playing music or movies can help passengers relax and be joyful while travelling.</p>
 
-            <img src="/assets/12-tempotraveller.webp" alt="12 seater tempo traveller for group travel in Varanasi" style="width:100%; border-radius:8px; margin: 20px 0;" />
+            <img src="https://images.pexels.com/photos/3989923/pexels-photo-3989923.jpeg" alt="A group of friends laughing and enjoying a road trip together" style="width:100%; border-radius:8px; margin: 20px 0;" />
 
             <h2>How to Calculate 12 Seater Tempo Traveller Fare for Your Trip</h2>
             <p>Budgeting for a group trip means knowing how this whole renting thing works out with a company calculating its charges. That way, you can avoid those hidden costs at the end of your trip.</p>
@@ -73,7 +73,7 @@ export const blogs = [
             
             <p>Good ventilation is crucial for preventing motion sickness in large groups. A well-maintained <strong>HVAC system</strong> filters out dust and pollutants, keeping the <strong>cabin air fresh</strong> even when driving through congested urban areas.</p>
 
-            <img src="/assets/12-tempotraveller-details.webp" alt="Comfortable interior of 12 seater tempo traveller with pushback seats" style="width:100%; border-radius:8px; margin: 20px 0;" />
+            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg" alt="Close up of comfortable leather seats in a luxury van" style="width:100%; border-radius:8px; margin: 20px 0;" />
 
             <h3>Extra Conveniences for Group Trips</h3>
             <p>Small details like <strong>USB charging ports</strong> at every seat and a quality music system can greatly enhance the travel experience. For families with <strong>elderly passengers</strong>, ensure the vehicle has a sturdy footboard for easy entry and exit.</p>
@@ -101,7 +101,7 @@ export const blogs = [
             
             <p>To avoid overpacking, create a <strong>shared packing list</strong> for the group. For example, instead of everyone bringing a heavy first-aid kit, one person can carry a <strong>comprehensive medical box</strong> for the entire group's use.</p>
 
-            <img src="/assets/tempo traveller collage.jpg" alt="Tempo traveller ready for outstation trip from Varanasi" style="width:100%; border-radius:8px; margin: 20px 0;" />
+            <img src="https://images.pexels.com/photos/8933565/pexels-photo-8933565.jpeg" alt="An open suitcase with travel essentials neatly packed" style="width:100%; border-radius:8px; margin: 20px 0;" />
 
             <h3>Planning for Road Safety and Stops</h3>
             <p>A well-prepared group should also keep an emergency contact list and basic details about the travel route. Discussing stop points before the trip helps everyone agree on meal breaks and restroom breaks.</p>
