@@ -22,15 +22,22 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         };
     }
 
+    // Use custom SEO title/description if available, otherwise fall back to defaults
+    const seoTitle = (post as { seoTitle?: string }).seoTitle || post.title;
+    const seoDescription = (post as { seoDescription?: string }).seoDescription || post.excerpt;
+
     return {
-        title: `${post.title} | Varanasi On Wheels Blog`,
-        description: post.excerpt,
+        title: `${seoTitle} | Varanasi On Wheels Blog`,
+        description: seoDescription,
         keywords: [
             "Varanasi travel guide",
             "tempo traveller Varanasi",
             "cab service Varanasi",
             "pilgrimage tour Varanasi",
             "Varanasi On Wheels",
+            "Urbania rental Varanasi",
+            "Urbania hire Varanasi",
+            "Force Urbania Varanasi",
             post.title.toLowerCase()
         ],
         openGraph: {
